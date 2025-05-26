@@ -1,0 +1,138 @@
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #f0f8ff, #ffffff);
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.hero-profile {
+  flex: 1 1 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-profile img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #0077b6;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease;
+}
+
+.hero-profile img:hover {
+  transform: scale(1.05);
+}
+
+.hero-content {
+  flex: 2 1 500px;
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.hero-content .highlight {
+  color: #0077b6;
+  font-weight: bold;
+}
+
+.dynamic-title {
+  font-size: 1.5rem;
+  color: #444;
+  height: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-summary {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border: none;
+}
+
+.primary {
+  background-color: #0077b6;
+  color: white;
+}
+
+.primary:hover {
+  background-color: #005f91;
+}
+
+.outline {
+  background-color: transparent;
+  color: #0077b6;
+  border: 2px solid #0077b6;
+}
+
+.outline:hover {
+  background-color: #0077b6;
+  color: white;
+}
+
+.hero-socials {
+  display: flex;
+  gap: 1rem;
+}
+
+.hero-socials img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.hero-socials img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .dynamic-title {
+    font-size: 1.25rem;
+  }
+
+  .hero-profile img {
+    width: 180px;
+    height: 180px;
+  }
+}

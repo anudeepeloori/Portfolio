@@ -1,0 +1,104 @@
+.skills-section {
+  padding: 4rem 2rem;
+  background-color: #f7f9fc;
+  color: #222;
+  text-align: center;
+}
+
+.skills-heading {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #0077b6;
+}
+
+.skills-subtext {
+  color: #555;
+  margin-bottom: 2.5rem;
+  font-size: 1rem;
+}
+
+.skills-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.skills-box {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 1.5rem 1.5rem;
+  width: 100%;
+  max-width: 550px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+
+
+.skills-box:hover {
+  transform: translateY(-5px);
+}
+
+.skills-box h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #0077b6;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Force 3 equal columns */
+  gap: 1.2rem 2rem; /* Tighten row and column spacing */
+}
+
+.skill-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 0.2rem 0; /* less vertical padding */
+  text-align: left;
+}
+
+.check-icon {
+  color: #0077b6;
+  font-size: 1.2rem;
+  margin-top: 0.2rem;
+}
+
+.skill-item strong {
+  font-size: 0.95rem; /* slightly smaller */
+}
+
+.skill-item p {
+  font-size: 0.8rem;
+  margin-top: 0.1rem;
+  color: #666;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .skills-box {
+    width: 100%;
+  }
+
+  .skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* slightly narrower */
+  gap: 0.6rem 1.5rem; /* reduced vertical spacing */
+}
+}
+
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr); /* fallback to 2 columns on tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-grid {
+    grid-template-columns: 1fr; /* fallback to 1 column on mobile */
+  }
+}
+

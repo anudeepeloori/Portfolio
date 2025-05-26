@@ -1,0 +1,82 @@
+.education-section {
+  padding: 4rem 2rem;
+  background-color: #f7f9fc;
+  color: #333;
+  text-align: center;
+}
+
+.education-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #0077b6;
+}
+
+.education-header p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.education-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.edu-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  width: 100%;
+  max-width: 500px;
+  text-align: left;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.edu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.edu-logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 1rem;
+  object-fit: contain;
+}
+
+.edu-content h2 {
+  font-size: 1.2rem;
+  color: #1d3557;
+  margin-bottom: 0.25rem;
+}
+
+.edu-content h3 {
+  font-size: 1rem;
+  color: #0077b6;
+  margin-bottom: 0.25rem;
+}
+
+.edu-content time {
+  font-size: 0.9rem;
+  color: #666;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.edu-content p {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .education-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
