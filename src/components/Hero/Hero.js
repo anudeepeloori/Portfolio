@@ -46,7 +46,7 @@ const Hero = () => {
   };
 
   const resumeLink = () => {
-    window.open("https://drive.google.com/file/d/19Cr2VGgFNW571Fdv1F-mcxU51I7B1t8I/view?usp=sharing", "_blank");
+    window.open("https://drive.google.com/file/d/12u4BGbXT4JXp8-GyoLrd9RA74oIHviCA/view?usp=sharing", "_blank");
   };
 
   return (

@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="footer-main">
         <div className="footer-branding">
           <h2>Anudeep Eloori</h2>
-          <p>Full-Stack Developer | Angular · Spring Boot · Node.js</p>
+          <p>Full-Stack Developer | Angular · React · Spring Boot · Node.js</p>
           <p>Building scalable, clean, and efficient applications for the future.</p>
         </div>
 

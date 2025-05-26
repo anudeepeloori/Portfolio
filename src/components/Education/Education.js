@@ -1,46 +1,77 @@
 import React from "react";
 import "./Education.css";
-
+import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
 import USF from "../../Assets/USF.png";
-import VNR from "../../Assets/VNR.png"; 
+import VNR from "../../Assets/VNR.png";
+import { FaJava } from "react-icons/fa";
+import { SiMysql, SiSpring, SiTensorflow } from "react-icons/si";
 
 const Education = () => {
-  const openInNewTab = (url) => {
-    window.open(url, "_blank");
+  const getIcon = (name) => {
+    const icons = {
+      Java: <FaJava />,
+      SQL: <SiMysql />,
+      "Spring Boot": <SiSpring />,
+      AI: <SiTensorflow />,
+    };
+    return icons[name] || null;
   };
 
   return (
     <section id="education" className="education-section">
-      <header className="education-header">
-        <h1>My Academic Journey</h1>
-        <p>Formal education and foundational learning experiences</p>
-      </header>
-
-      <div className="education-cards">
-        <article className="edu-card" onClick={() => openInNewTab("https://vnrvjiet.ac.in/")}>
-          <img src={VNR} alt="VNR VJIET" className="edu-logo" />
-          <div className="edu-content">
-            <h2>VNR Vignana Jyothi Institute of Engineering and Technology</h2>
-            <h3>B.Tech in Computer Science</h3>
-            <p>
-              <strong>Key Subjects:</strong> Java, Data Structures, OS, CN, Web Development, ML, AI..
-            </p>
+      <h1 className="education-heading">My Academic Journey</h1>
+      <VerticalTimeline>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--education"
+          date="Aug 2023 – May 2025"
+          iconStyle={{ background: "#0077b6", color: "#fff" }}
+          icon={<img src={USF} alt="USF" className="timeline-logo" />}
+        >
+          <h3 className="vertical-timeline-element-title">University of South Florida</h3>
+          <h4 className="vertical-timeline-element-subtitle">M.S. in Computer Science</h4>
+          <div className="subject-tags">
+            {[
+              "Operating Systems",
+              "Computer Architecture",
+              "Data Structures",
+              "AI",
+              "Trustworthy AI Systems",
+              "HCI",
+              "Augmented Reality",
+              "Social Media Mining",
+              "Emerging Topics in Network Security"
+            ].map((tag, i) => (
+              <span key={i} className="tag">{getIcon(tag)} {tag}</span>
+            ))}
           </div>
-        </article>
+        </VerticalTimelineElement>
 
-        <article className="edu-card" onClick={() => openInNewTab("https://www.usf.edu")}>
-          <img src={USF} alt="University of South Florida" className="edu-logo" />
-          <div className="edu-content">
-            <h2>University of South Florida</h2>
-            <h3>M.S. in Computer Science</h3>
-            <time>Aug 2023 – May 2025</time>
-            <p>
-              <strong>Key Subjects:</strong> Advanced OS, Computer Architecture, Data Structures and Algorithms, 
-              Intoduction to AI, Trustworthy AI Systems, Human Computer Interaction, Augmented Reality, Social Media Mining.
-            </p>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--education"
+          iconStyle={{ background: "#b6e5ed", color: "#b6e5ed" }}
+          icon={<img src={VNR} alt="VNR" className="timeline-logo" />}
+        >
+          <h3 className="vertical-timeline-element-title">VNR VJIET</h3>
+          <h4 className="vertical-timeline-element-subtitle">B.Tech in Computer Science and Business Systems</h4>
+          <div className="subject-tags">
+            {[
+              "Java",
+              "Data Structures",
+              "Operating Systems",
+              "Computer Networks",
+              "Web Development",
+              "AI",
+              "ML",
+              "DBMS",
+              "Software Design",
+              "Design Thinking",
+            ].map((tag, i) => (
+              <span key={i} className="tag">{getIcon(tag)} {tag}</span>
+            ))}
           </div>
-        </article>
-      </div>
+        </VerticalTimelineElement>
+      </VerticalTimeline>
     </section>
   );
 };

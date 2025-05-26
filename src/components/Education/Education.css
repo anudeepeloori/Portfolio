@@ -2,81 +2,52 @@
   padding: 4rem 2rem;
   background-color: #f7f9fc;
   color: #333;
+}
+
+.education-heading {
   text-align: center;
-}
-
-.education-header h1 {
   font-size: 2.5rem;
-  margin-bottom: 0.5rem;
   color: #0077b6;
-}
-
-.education-header p {
-  font-size: 1rem;
-  color: #555;
   margin-bottom: 2rem;
 }
 
-.education-cards {
+.timeline-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+  padding: 6px;
+  background-color: #fff;
+}
+
+.edu-description {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.subject-tags {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
 }
 
-.edu-card {
-  background: #ffffff;
-  border-radius: 12px;
-  padding: 1.5rem;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
-  width: 100%;
-  max-width: 500px;
-  text-align: left;
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.edu-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
-}
-
-.edu-logo {
-  width: 100px;
-  height: auto;
-  margin-bottom: 1rem;
-  object-fit: contain;
-}
-
-.edu-content h2 {
-  font-size: 1.2rem;
-  color: #1d3557;
-  margin-bottom: 0.25rem;
-}
-
-.edu-content h3 {
-  font-size: 1rem;
+.tag {
+  background-color: #e0f4ff;
   color: #0077b6;
-  margin-bottom: 0.25rem;
+  font-size: 0.75rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 20px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  transition: transform 0.2s ease;
 }
 
-.edu-content time {
-  font-size: 0.9rem;
-  color: #666;
-  display: block;
-  margin-bottom: 0.5rem;
-}
-
-.edu-content p {
-  font-size: 0.95rem;
-  color: #444;
-  line-height: 1.5;
-}
-
-/* Responsive behavior */
-@media (max-width: 768px) {
-  .education-cards {
-    flex-direction: column;
-    align-items: center;
-  }
+.tag:hover {
+  transform: scale(1.05);
+  cursor: default;
 }

@@ -4,6 +4,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import menuOpenIcon from "../../Assets/menu-png.png";
 import menuCloseIcon from "../../Assets/close-square-png.png";
 
+
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState("home");
   const menuRef = useRef();
@@ -53,8 +54,10 @@ const Navbar = () => {
             >
               {link.name}
             </AnchorLink>
+            
           </li>
         ))}
+        
       </ul>
 
       <div className="nav-connect desktop-only">

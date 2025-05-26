@@ -3,6 +3,9 @@ import "./Projects.css";
 import bankImg from "../../Assets/bankimg.png";
 import movieImg from "../../Assets/movieimg.png";
 import cropImg from "../../Assets/cropimg.png";
+import llmImg from "../../Assets/llm.png";
+import arImg from "../../Assets/arlabelImg.png";
+import twitterImg from "../../Assets/twitter.png"
 
 const Projects = () => {
   const moreLink = () => {
@@ -16,15 +19,15 @@ const Projects = () => {
         "Built with Node.js, Express, Angular, and Oracle DB. Supports JWT-secured user operations like account creation, fund transfers, and history viewing with robust backend services.",
       image: bankImg,
       github: "https://github.com/nithishchowdam/BankManagementSystem",
-      demo: "https://drive.google.com/file/d/19Cr2VGgFNW571Fdv1F-mcxU51I7B1t8I/view?usp=sharing",
+      demo: "https://drive.google.com/file/d/1gihoTezcy2A_hyrdNbNkNa85yJxW0Fie/view?usp=sharing",
     },
     {
       title: "Movie Review Website",
       description:
-        "A full-stack MERN application with Angular frontend and Node/MongoDB backend. Implements user auth, real-time ratings, secure reviews, and personalized movie suggestions.",
+        "A full-stack MEAN application with Angular frontend and Node/MongoDB backend. Implements user auth, real-time ratings, secure reviews, and personalized movie suggestions.",
       image: movieImg,
       github: "https://wicked-movies-865526f62882.herokuapp.com/#/home",
-      demo: "https://github.com/anudeepeloori/Crop-Recommendation-and-Disease-prediction",
+      demo: "https://wicked-movies-865526f62882.herokuapp.com/#/home",
     },
     {
       title: "Crop Recommendation System",
@@ -34,15 +37,47 @@ const Projects = () => {
       github:
         "https://github.com/anudeepeloori/Crop-Recommendation-and-Disease-prediction",
       demo:
-        "https://drive.google.com/file/d/1kyfKbfz38AbRroXdnsL_vs6wXamU5B4U/view?usp=sharing",
+        "https://drive.google.com/file/d/1ZEXBAJ1mirqmT0uOLZT45fSnIRVAW71E/view?usp=sharing",
     },
+    {
+      title: "Enhancing Reasoning Capabilities in Large Language Models",
+      description:
+        "This project aims to fine-tune an open-source LLM on datasets that combine coding and reasoning tasks to improve its problem-solving abilities.",
+      image: llmImg,
+      github:
+        "https://github.com/anudeepeloori/LLMTAI",
+      demo:
+        "https://drive.google.com/file/d/1XhcMqA2JJh5Sf1b7P7Kyo3t69kmkNuqb/view?usp=sharing",
+    },
+    {
+      title: "AR LABEL ASSISTANT",
+      description:
+        "Our application, the AR Label Assistant is conceived to address the common challenge of locating items within a room. Whether searching for items, identifying ingredients in a kitchen, or simply finding personal belongings, our application aims to streamline the process, providing an intuitive and enjoyable solution.",
+      image: arImg,
+      github:
+        "https://drive.google.com/file/d/1XFX6aev95sfQTOhq3tA16IHKRzxSFabq/view?usp=sharing",
+      demo:
+        "https://www.youtube.com/watch?v=keiouKz4_RM",
+        
+    },
+     {
+      title: "Twitter Disaster Analysis",
+      description:"This project develops a tweet classification system to identify disaster-related content using a broad range of machine learning and deep learning models.",
+      image: twitterImg,
+      github:
+        "https://github.com/anudeepeloori/TwitterDisasterAnalysis",
+      demo:
+        "https://drive.google.com/file/d/1zgF1wKScRzW8vIyndTb2YYeALVyBGGLW/view?usp=sharing",
+        
+    }
+
   ];
 
   return (
     <section id="projects" className="projects-section">
       <div className="projects-header">
         <h1>Featured Projects</h1>
-        <p>Some of the work I've built with passion and purpose.</p>
+        <p>A selection of projects showcasing my problem-solving and development skills.</p>
       </div>
 
       <div className="projects-grid">
